@@ -11,7 +11,7 @@ st.markdown("Upload an image and let AI predict whether it's a **Cat or Dog** ðŸ
 
 @st.cache_resource
 def load_my_model():
-    return load_model("cats_dogs_classifier.keras")
+    return load_model("cats_dogs_classifier.keras", compile= False)
 
 model = load_my_model()
 
